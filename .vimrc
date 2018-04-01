@@ -1,6 +1,7 @@
 " Use Vim settings
 set nocompatible
 
+" Enable filetype detection for loading plugin and indent settings
 filetype plugin indent on
 
 " Stop creating backup files
@@ -40,6 +41,13 @@ set cursorline
 " Show invisible characters
 set list
 set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
+
+"--------------------------------------------------
+" Functional settings
+"--------------------------------------------------
+
+" Change backspace behavior for removing auto-indentation, eol, etc.
+set backspace=indent,eol,start
 
 " Automatically wrap left and right
 set whichwrap=b,s,h,l,<,>,[,]
