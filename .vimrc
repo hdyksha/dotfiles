@@ -114,11 +114,3 @@ inoremap <C-a> <HOME>
 "inoremap <C-p> <Up>
 inoremap <C-b> <Left>
 inoremap <C-f> <Right>
-
-" Auto completion
-inoremap { {}<LEFT>
-inoremap [ []<LEFT>
-inoremap ( ()<LEFT>
-inoremap "" ""<LEFT>
-inoremap '' ''<LEFT>
-inoremap <> <><LEFT>
