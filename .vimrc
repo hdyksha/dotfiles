@@ -76,8 +76,8 @@ set softtabstop=0
 " Width of white spaces with '<<'/'>>'/'==' indentation
 set shiftwidth=4
 
-" NOT insert white spaces instead of <Tab> insertion
-set noexpandtab
+" Insert white spaces instead of <Tab> insertion
+set expandtab
 
 "--------------------------------------------------
 " Search settings
