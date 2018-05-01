@@ -11,8 +11,11 @@ grep -v -e '^.$' -e '^..$' -e '^.git$' -e "^${SCRIPT}$" | \
 while read f ; do
     source=$PWD/$f
     dest=$HOME/$f
-    printf "\e[32mCreate symlink:\e[m $dest -> $source\n"
+    if [ -d $dest ]; then
+        rm -rf $dest # To avoid creating the link inside $dest directory.
+    fi
     ln -sf $source $dest
+    printf "\e[32mCreate symlink:\e[m $dest -> $source\n"
 done
 
 cd $CURDIR
